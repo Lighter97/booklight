@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#33C3F0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="manifest" href="/manifest.json">
+    <title>Booklight</title>
+</head>
+<body>
+    <div class="container">
+        <br>
+        <h1>📚 <b>Booklight</b> - an easy book utility</h1>
+        <p>To add a book simply fill a form below.</p>
+        <form id="book-form">
+            <div class="row">
+                <div class="six columns">
+                    <input type="text" id="title" class="u-full-width" placeholder="📖 Title">
+                </div>
+                <div class="six columns">
+                    <input type="text" id="author" class="u-full-width" placeholder="✍️ Author">
+                </div>
+            </div>
+            <div class="row">
+                <div class="eight columns">
+                    <input type="text" id="isbn" class="u-full-width" placeholder="🗄️ ISBN">
+                </div>
+                <div class="four columns">
+                    <input type="submit" id="add" value="✔️ Add" class="u-full-width button-primary">
+                </div>
+            </div>
+        </form>
+        <table class="u-full-width">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
